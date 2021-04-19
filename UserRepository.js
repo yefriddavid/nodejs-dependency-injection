@@ -1,6 +1,10 @@
 class UserRepository {
 
+	index = 1
 	constructor(){
+
+		this.index++
+
 		console.log("constructor user repository")
 	}
 
@@ -8,7 +12,7 @@ class UserRepository {
 		console.log("destructor")
 	}
 	get(){
-		return "Hello awilix"
+		return "I am repository Hello awilix " + this.index
 	}
 
 }

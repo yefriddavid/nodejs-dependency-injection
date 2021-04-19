@@ -34,13 +34,13 @@ const { createContainer, asClass } = require('awilix');
 //module.exports = container;
 module.exports = createContainer()
     .register({
-    userRepository: asClass(UserRepository),
-    userService: asClass(UserService),
+	    /*userRepository: asClass(UserRepository),
+    userService: asClass(UserService),*/
 	  //child: asClass(Child)
 
-	  /*userRepository: asClass(UserRepository).singleton(),
-    userService: asClass(UserService).singleton(),
-    child: asClass(Child).singleton()*/
+	  userRepository: asClass(UserRepository).singleton(),
+	    userService: asClass(UserService).singleton()//,
+	    //child: asClass(Child).singleton()
   });
 
 
